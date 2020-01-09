@@ -1,0 +1,16 @@
+.pseudoelement
+  width: 300px
+  &:before
+    content: "hola"
+  .ie-8 &
+    &:before
+      content: "chao"
+body 
+  color: red
+  .primerijo 
+    margin: 20px
+.btn
+  background-color: pink 
+  border-radius: 2px
+  &--alert
+    background-color: red
