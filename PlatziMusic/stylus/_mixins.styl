@@ -1,3 +1,12 @@
 //mixin: permite reutilizar valores en bloque dentro del un código completo de cs
 max-width()
   max-width: 800px
+
+//mixin parametrico     //variable
+mixin-max-width(width = page-max-width)
+  max-width: width
+
+
+//Usando mixin
+.section 
+  mixin-max-width(90%)
