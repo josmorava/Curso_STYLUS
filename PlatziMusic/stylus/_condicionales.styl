@@ -1,0 +1,17 @@
+//condiconales
+box(top,bottom, margin-only = true)
+  if margin-only
+    margin top bottom 
+  else 
+    padding top bottom
+
+tone(dark = true)
+  if dark
+    color: white
+    background-color: black
+  else
+    color: dark
+    background-color: white
+
+.div
+  tone(white)
