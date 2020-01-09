@@ -1,0 +1,18 @@
+gridsize = (1..12)
+
+.grid
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  justify-content: flex-start
+  flex-direction: row
+//todas las clases que empiecen por, -- va a ocurrir=
+[class^="grid--item"]
+  flex-shrink: 0
+  margin-right: 12px
+  flex-grow: 1
+
+//for
+for i in gridsize 
+  .grid--item-{i}
+    width (100 / i) * 1%
